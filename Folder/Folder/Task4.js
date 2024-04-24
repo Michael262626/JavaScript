@@ -1,12 +1,13 @@
-//function books(){
+function books(listOfBooks){
     let result1 = []
-    let listOfBooks = ["javaBooks", "pythonBooks", "jsBook", "cBook"]
-    let members = ["Emily","Jack", "Sophia","Daniel"]
-    for (let count of members){
-            result1.push()
-        }
-        console.log(result1);
-    //}
+    let counter  =0 
+    let members = ["Emily","Jack", "Sophia", "Daniel"]
+    for (value of members){
+            let obj = {name:value,book:listOfBooks[counter++]}
+            result1.push(obj);
+    }
+        return result1;
+    }
 
-//module.exports = books
+module.exports = books
 
